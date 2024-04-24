@@ -1,24 +1,15 @@
-import React, { useState} from 'react';
-
-import logo from './logo.svg';
 import './App.css';
+import ReactLogo from './components/ReactLogo';
+import Header from './components/Header';
+import Translation from './components/Translation';
+
 
 function App() {
- 
-  const [isClicked, setIsClicked] = useState(false);
-
-
   return (
-
     <div className="container">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <label onClick={()=> setIsClicked(!isClicked)}
-      style={{ fontSize: isClicked ? '100px' : '16px' }}
-      >
-        {isClicked ? '{कुकुरको छोरो} ; {मेरो डिक चुस्नुहोस्}' : 'DO NOT CLICK HERE'}
-      </label>
+     <ReactLogo/>
+<Header/>    
+<Translation/>
     </div>
 
 

@@ -17,7 +17,7 @@ function App() {
       <label onClick={()=> setIsClicked(!isClicked)}
       style={{ fontSize: isClicked ? '100px' : '16px' }}
       >
-        {isClicked ? 'Lado chu radi !!! Ghata muji !!!' : 'Click Here'}
+        {isClicked ? '{कुकुरको छोरो} ; {मेरो डिक चुस्नुहोस्}' : 'DO NOT CLICK HERE'}
       </label>
     </div>
 

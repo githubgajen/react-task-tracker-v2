@@ -2,9 +2,8 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 
 const Header = ({title}) => {
-
   const onClick = () => {
-    alert('Clickeddd')
+    alert('What do you want to add masale?')
   }
 
   return (
@@ -19,23 +18,8 @@ Header.defaultProps = {
   title: 'TTask TTracker 3Gs'
 }
 
-//to make code robust and catch error before it happens
 Header.propTypes = {
   title:PropTypes.string.isRequired,
 }
 
-
-//CSS in JS
-// const headingStyle = {
-//   color: 'red', 
-//   backgroundColor: 'green' 
-// }
-
 export default Header
-
-// <header>
-//       <h1>{title}</h1>
-//       { <h1 style={ headingStyle }>{title}</h1> }
-//       { <h1 style={{ color: 'red', backgroundColor: 'black' }}>{title}</h1> }
-//       { <h1>{props.title}</h1> }
-//     </header>

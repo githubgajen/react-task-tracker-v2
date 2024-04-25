@@ -1,7 +1,7 @@
 import './App.css';
 import ReactLogo from './components/ReactLogo';
 import Header from './components/Header';
-import Translation from './components/Translation';
+//import Translation from './components/Translation';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="container">
      <ReactLogo/>
 <Header/>    
-<Translation/>
+{/* <Translation/> */}
     </div>
 
 

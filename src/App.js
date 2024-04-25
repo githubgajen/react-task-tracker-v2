@@ -1,15 +1,41 @@
 import './App.css';
 import ReactLogo from './components/ReactLogo';
 import Header from './components/Header';
+import Tasks from './components/Tasks';
+import { useState } from 'react'
+
 //import Translation from './components/Translation';
 
 
-function App() {
+const App = () => {
+  //state: tasks
+    //update state: setTasks
+    const [tasks, setTasks] = useState([
+      {
+          id: 1,
+          text: 'Go To Gym',
+          day:' 4 days a week at 6:00am',
+          reminder: true
+      },
+      {
+          id: 2,
+          text: 'Cook Food',
+          day:'3 days a week at 12:00pm',
+          reminder: true
+      },
+      {
+          id: 3,
+          text:   'Go To Bed',
+          day:' Every day at 11:59pm',
+          reminder: false
+      }
+  ])
   return (
     <>
     <div><ReactLogo/></div>
     <div className="container">
-      <Header/>    
+      <Header/>
+      <Tasks tasks={tasks}/>    
     </div>
   </> 
   );

@@ -16,7 +16,7 @@ const Header = ({title}) => {
 }
 
 Header.defaultProps = {
-  title: 'TTask TTracker'
+  title: 'TTask TTracker 3Gs'
 }
 
 //to make code robust and catch error before it happens

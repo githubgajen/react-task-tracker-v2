@@ -4,7 +4,7 @@ import Task from './Task'
 //it shouldn't be part of component, instead should be part of state (tasks)
 
 
-const Tasks = ({tasks}) => {
+const Tasks = ({tasks, onDelete}) => {
     
   return (
     //empty fragment
@@ -12,7 +12,8 @@ const Tasks = ({tasks}) => {
     //looping...outputting component... and passing task
     <>
       {tasks.map((task)=> (
-        <Task key={task.id} task={task}/>
+        <Task key={task.id} task={task} onDelete={onDelete}/>
+        // onDelete will be props of task
         ))}
     </>
   )

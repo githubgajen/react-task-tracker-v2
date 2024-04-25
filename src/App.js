@@ -19,23 +19,33 @@ const App = () => {
       },
       {
           id: 2,
-          text: 'Cook Food',
+          text: 'Good/Cook Food',
           day:'3 days a week at 12:00pm',
           reminder: true
       },
       {
           id: 3,
-          text:   'Go To Bed',
+          text:'Good Sleep',
           day:' Every day at 11:59pm',
           reminder: false
       }
   ])
+
+  const deleteTask = (id) => {
+    //alert('delete',id)
+  //console.log('Deleting task with ID:', id)
+  //deal with mutable state using setTask()
+  setTasks(tasks.filter((task)=> task.id !== id))
+}
+
   return (
     <>
     <div><ReactLogo/></div>
     <div className="container">
       <Header/>
-      <Tasks tasks={tasks}/>    
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/>:'No Task Available ...CHAKK KO PUWAL'}
+
+      {/* onDelete will be props of tasks     */}
     </div>
   </> 
   );

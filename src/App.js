@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container">
      <ReactLogo/>
-<Header/>    
+<Header title="TTask TTracker"/>    
 {/* <Translation/> */}
     </div>
 

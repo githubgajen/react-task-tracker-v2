@@ -6,11 +6,16 @@ import Header from './components/Header';
 
 function App() {
   return (
+    <>
+    <div><ReactLogo/></div>
     <div className="container">
-     <ReactLogo/>
-<Header title="TTask TTracker"/>    
-{/* <Translation/> */}
+      <Header/>    
     </div>
+  </> 
+  );
+}
+
+export default App;
 
 
     // <div className="App">
@@ -26,10 +31,3 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-
-
-    
-  );
-}
-
-export default App;

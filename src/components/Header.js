@@ -3,19 +3,19 @@ import Button from './Button'
 
 const Header = ({title}) => {
   const onClick = () => {
-    alert('What do you want to add masale?')
+    alert('What do you want to add khatee?')
   }
 
   return (
     <header className='header'>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <Button color='green' text='Add' onClick={onClick}/>
     </header>
   )
 }
 
 Header.defaultProps = {
-  title: 'TTask TTracker 3Gs'
+  title: 'LLIFEs TTask TTracker 3Gs'
 }
 
 Header.propTypes = {

@@ -13,6 +13,7 @@ const AddTask = ({ onAdd }) => {
           alert('Please add a task')
           return
         }
+        
         onAdd({text, day, reminder})
 
         setText('')

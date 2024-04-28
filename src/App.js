@@ -1,9 +1,12 @@
 import './App.css';
 import { useState } from 'react'
+import { BrowserRouter as Router, Route }from 'react-router-dom'
 import ReactLogo from './components/ReactLogo';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
+import About from './components/About';
 
 
 const App = () => {
@@ -51,7 +54,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <Router>
     <div><ReactLogo/></div>
     <div className="container">
       <Header 
@@ -60,15 +63,19 @@ const App = () => {
         />
         
         {showAddTask && <AddTask onAdd={addTask}/>}
-        {tasks.length > 0 ? 
+        {tasks.length > 0 ? (
         <Tasks 
           tasks     = {tasks} 
           onDelete  = {deleteTask}
           onToggle  = {toggleReminder}
           />
-        :'No Task Available'}
+        ): ('No Task To Show')}   
+    <Route path='/about' component={About}/>
+    <Footer/>
     </div>
-  </> 
+  
+ 
+  </Router>
   );
 }
 export default App;

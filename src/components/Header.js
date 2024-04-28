@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
 
-const Header = ({title, onAdd, showAdd                          }) => {
-  // const onClick = () => {
-  //   alert('What do you want to add khatee?')
-  // }
-
+const Header = ({title, onAdd, showAdd}) => {
   return (
     <header className='header'>
       <h2>{title}</h2>
@@ -19,7 +15,7 @@ const Header = ({title, onAdd, showAdd                          }) => {
 }
 
 Header.defaultProps = {
-  title: 'LIFEs TTask TTracker 3Gs'
+  title: 'TTask TTracker'
 }
 
 Header.propTypes = {

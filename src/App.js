@@ -66,7 +66,7 @@ const App = () => {
           onDelete  = {deleteTask}
           onToggle  = {toggleReminder}
           />
-        :'No Task Available ...Nakuman'}
+        :'No Task Available'}
     </div>
   </> 
   );

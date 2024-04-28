@@ -69,6 +69,6 @@ const App = () => {
         :'No Task Available'}
     </div>
   </> 
-  );
+  );                                                      
 }
 export default App;
